@@ -1,0 +1,19 @@
+[project]
+name = "catalog-matching-embeddings"
+version = "0.1.0"
+description = "Matching de descripciones comerciales libres contra un catálogo de productos, con candidatos rankeados y revisión humana por excepción"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Nicolás González Rojas" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+catalog-matching = "catalog_matching.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
